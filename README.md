@@ -17,3 +17,20 @@ sudo apt-get install ros-humble-control*
 sudo apt-get install ros-humble-gazebo-plugins
 sudo apt-get install ros-humble-moveit-visual-tools
 sudo apt-get install ros-humble-graph-msgs
+```
+
+## Running Project
+
+### Clone the Repository
+To clone this repository to your local machine, use the following command:
+```sh
+git clone https://github.com/prsnn450/Robotic_arm_ws.git
+```
+
+### Building the workspace
+Navigate to that workspace and run commands
+```sh
+colcon build
+source install/setup.bash
+```
+

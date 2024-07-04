@@ -18,7 +18,6 @@ sudo apt-get install ros-humble-gazebo-plugins
 sudo apt-get install ros-humble-moveit-visual-tools
 sudo apt-get install ros-humble-graph-msgs
 
-### Clone the repository to your workspace:
+Clone the Repository
 
-```sh
-git clone http://
+Clone the repository to your local machine using the following command:

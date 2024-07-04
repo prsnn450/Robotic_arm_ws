@@ -46,5 +46,8 @@ Use the following launch files to execute different components of the robotic ar
   ```sh
   ros2 run kuka_arm_pkg jtc_node
   ```
-
+- **Launch Gazebo and Rviz with the moveit configuration for the Robotic Arm:**
+  ```sh
+  ros2 launch kuka_arm_pkg 3_moveit_kuka_arm.launch.py
+  ```
 

@@ -10,14 +10,9 @@ These instructions will help you set up the project on your local machine.
 
 Install the necessary dependencies using the following commands:
 
-```sh
 sudo apt-get install ros-humble-gazebo-ros
 sudo apt-get install ros-humble-gazebo-ros2-control
 sudo apt-get install ros-humble-control*
 sudo apt-get install ros-humble-gazebo-plugins
 sudo apt-get install ros-humble-moveit-visual-tools
 sudo apt-get install ros-humble-graph-msgs
-
-Clone the Repository
-
-Clone the repository to your local machine using the following command:

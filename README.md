@@ -34,3 +34,17 @@ colcon build
 source install/setup.bash
 ```
 
+### Run the Launch Files
+
+Use the following launch files to execute different components of the robotic arm project:
+
+- **Launch Gazebo with ros2_contol for the Robotic Arm:**
+  ```sh
+  ros2 launch kuka_arm_pkg 2_gazebo_kuka_arm.launch.py
+  ```
+  Open a new termainal and run the below command for the joint trajectory control
+  ```sh
+  ros2 run kuka_arm_pkg jtc_node
+  ```
+
+

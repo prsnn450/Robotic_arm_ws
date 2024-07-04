@@ -17,3 +17,8 @@ sudo apt-get install ros-humble-control*
 sudo apt-get install ros-humble-gazebo-plugins
 sudo apt-get install ros-humble-moveit-visual-tools
 sudo apt-get install ros-humble-graph-msgs
+
+### Clone the repository to your workspace:
+
+```sh
+git clone http://

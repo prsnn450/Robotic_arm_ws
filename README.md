@@ -1,6 +1,6 @@
 # Robotic_arm_ws
 ## Overview
-This repository contains the source code and configuration files for the KUKA robotic arm controlled using ROS2 and MoveIt. The project simulates the robotic arm's movements using Gazebo and visualizes them using Rviz.
+This repository contains the source code and configuration files for the robotic arm controlled using ROS2 and MoveIt. The project simulates the robotic arm's movements using Gazebo and visualizes them using Rviz.
 
 ## Getting Started
 

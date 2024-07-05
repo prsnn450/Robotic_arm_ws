@@ -61,6 +61,9 @@ Use the following launch files to execute different components of the robotic ar
   export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_ros_occupancy_map_monitor/lib:$LD_LIBRARY_PATH
   export LD_LIBRARY_PATH=/opt/ros/humble/lib:$LD_LIBRARY_PATH
   ```
-  (change it according to your file path)
+  (change it according to your file path). Now run the launch file
+  ```sh
+  ros2 launch kuka_arm_pkg 4_moveit_node_controlling.launch.py
+  ```
 
 

@@ -46,8 +46,21 @@ Use the following launch files to execute different components of the robotic ar
   ```sh
   ros2 run kuka_arm_pkg jtc_node
   ```
-- **Launch Gazebo and Rviz with the moveit configuration for the Robotic Arm:**
+- **Launch Gazebo and Rviz with the Moveit configuration for the Robotic Arm:**
   ```sh
   ros2 launch kuka_arm_pkg 3_moveit_kuka_arm.launch.py
   ```
+- **Launch a node to control the target pose of the Robotic Arm using Moveit configuration:**
+  Before running this launch file ensure 3_moveit_kuka_arm.launch.py is running on another terminal.
+  Run these export command in the terminal to avoid "File Not Found Error"
+  ```sh
+  export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_ros_planning_interface/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_ros_warehouse/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_ros_planning/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_core/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_ros_occupancy_map_monitor/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/opt/ros/humble/lib:$LD_LIBRARY_PATH
+  ```
+  (change it according to your file path)
+
 

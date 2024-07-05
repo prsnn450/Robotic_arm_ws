@@ -58,21 +58,21 @@ Use the following launch files to execute different components of the robotic ar
     'positions': [-0.5, 0.0, 0.5, 0.0, -1.0, 0.5],
     'time_from_start': { 'sec': 4, 'nanosec': 0 }
   }]
-}"
-```
-To control the gripper_controller:
-```sh
-ros2 topic pub --once /kuka_gripper_controller/joint_trajectory trajectory_msgs/JointTrajectory "{
-  'joint_names': ['left_gripper_finger_joint', 'right_gripper_finger_joint'],
-  'points': [{
-    'positions': [0.04, 0.04],
-    'time_from_start': { 'sec': 1, 'nanosec': 0 }
-  }, {
-    'positions': [0.01, 0.01],
-    'time_from_start': { 'sec': 2, 'nanosec': 0 }
-  }]
-}"
-```
+  }"
+  ```
+  To control the gripper_controller:
+  ```sh
+  ros2 topic pub --once /kuka_gripper_controller/joint_trajectory trajectory_msgs/JointTrajectory "{
+    'joint_names': ['left_gripper_finger_joint', 'right_gripper_finger_joint'],
+    'points': [{
+      'positions': [0.04, 0.04],
+      'time_from_start': { 'sec': 1, 'nanosec': 0 }
+    }, {
+      'positions': [0.01, 0.01],
+      'time_from_start': { 'sec': 2, 'nanosec': 0 }
+    }]
+  }"
+  ```
 - **Launch Gazebo and Rviz with the Moveit configuration for the Robotic Arm:**
   ```sh
   ros2 launch kuka_arm_pkg 3_moveit_kuka_arm.launch.py

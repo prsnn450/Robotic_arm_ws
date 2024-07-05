@@ -46,7 +46,7 @@ Use the following launch files to execute different components of the robotic ar
   ```sh
   ros2 run kuka_arm_pkg jtc_node
   ```
-  Or you can control the joint trajectory using ros2 topic <br>
+  Or you can control the joint trajectory using ros2 topic, <br>
   To control the arm_controller:
   ```sh
   ros2 topic pub --once /kuka_arm_controller/joint_trajectory trajectory_msgs/JointTrajectory "{

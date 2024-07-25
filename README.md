@@ -61,6 +61,12 @@ Use the following launch files to execute different components of the robotic ar
   }"
   ```
   To control the gripper_controller:
+  Open a new terminal and run below command to control the gripper
+  ```sh
+  ros2 run kuka_arm_pkg gripper_node
+  ```
+  Or the gripper can be controlled using the ROS2 topics. Use the below command to control the gripper using the topic:
+  
   ```sh
   ros2 topic pub --once /kuka_gripper_controller/joint_trajectory trajectory_msgs/JointTrajectory "{
     'joint_names': ['left_gripper_finger_joint', 'right_gripper_finger_joint'],

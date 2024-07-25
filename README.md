@@ -85,7 +85,7 @@ Use the following launch files to execute different components of the robotic ar
   ```
 - **Launch a node to control the target pose of the Robotic Arm using Moveit configuration:**
   Before running this launch file ensure 3_moveit_kuka_arm.launch.py is running on another terminal.
-  Run these export command in the terminal to avoid "File Not Found Error" (change it according to your file path). 
+  Run these export command in the terminal in case of any "File Not Found Error" (change it according to your file path). 
   ```sh
   export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_ros_planning_interface/lib:$LD_LIBRARY_PATH
   export LD_LIBRARY_PATH=/home/vboxuser/moveit_ws/install/moveit_ros_warehouse/lib:$LD_LIBRARY_PATH

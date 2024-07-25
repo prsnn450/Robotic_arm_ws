@@ -31,10 +31,11 @@ ament_target_dependencies(jtc_node rclcpp trajectory_msgs)
 add_executable(moveit_drive src/motion_drive_moveit.cpp)
 ament_target_dependencies(moveit_drive ${Moveit_includes})
 
-
+add_executable(gripper_node src/gripper_controller.cpp)
+ament_target_dependencies(gripper_node rclcpp trajectory_msgs)
 
 install(TARGETS
-  jtc_node moveit_drive
+  jtc_node moveit_drive gripper_node
   DESTINATION lib/${PROJECT_NAME})
 
 
